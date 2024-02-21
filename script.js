@@ -9,7 +9,7 @@ const peopleData = [
     {
       name: "Leonard",
       birthday: "03.03.2010",
-      fullName: "Unbekannt",
+      fullName: "Singer",
       photo: false,
       address: "In Fischeln, ansonsten unbekannt",
       school: "Frei-Herr-Vom-Stein (Realschule), Krefeld"

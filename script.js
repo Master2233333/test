@@ -16,14 +16,23 @@ const peopleData = [
     },
   {
       name: "Yusuf Kaplan",
-      birthday: "10.11.2008",
+      birthday: "11.11.2008",
       fullName: "Kaplan",
-      photo: false,
+      photo: true,
       address: "Braunschweig",
       school: "Unbekannt"
     },
   {
       name: "Marta Szumilas",
+      birthday: "15.03.2009",
+      fullName: "Szmulias",
+      photo: false,
+      address: "Ritterstrase krefeld",
+      school: "Frei-Herr-Vom-Stein (Realschule), Krefeld"
+    },
+
+    {
+      name: "",
       birthday: "15.03.2009",
       fullName: "Szmulias",
       photo: false,

@@ -48,12 +48,12 @@ const peopleData = [
       school: "Kaiserplatz, Krefeld"
     },
 {
-      name: "Noemiuhhu Palmeri",
-      birthday: "12.09.2010",
-      fullName: "Palmeri",
+      name: "Yusuf Balaban",
+      birthday: "14.1.2008",
+      fullName: "Balaban",
       photo: false,
-      address: "Viktoriastr. 100, krefeld",
-      school: "Kaiserplatz, Krefeld"
+      address: "Remschneider. 208, krefeld",
+      school: "Frei-Herr-Vom-Stein (Realschule), Krefeld"
     },
     // Add more people here
   ];

@@ -39,6 +39,14 @@ const peopleData = [
       address: "Elizabethstr. 63, krefeld",
       school: "Kaiserplatz, Krefeld"
     },
+   {
+      name: "Noemi Palmeri",
+      birthday: "12.09.2010",
+      fullName: "Palmeri",
+      photo: false,
+      address: "Viktoriastr. 100, krefeld",
+      school: "Kaiserplatz, Krefeld"
+    },
     // Add more people here
   ];
   

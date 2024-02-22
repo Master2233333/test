@@ -1,8 +1,10 @@
+/* Updated CSS for better responsiveness */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('https://wallpapercave.com/wp/yjGLEvI.jpg');
+    background-image: url("https://wallpapercave.com/wp/yjGLEvI.jpg");
     background-size: cover;
     min-height: 100vh;
     display: flex;
@@ -11,18 +13,32 @@ body {
     position: relative;
 }
 
+.button-title {
+    position: absolute;
+    left: 15px;
+    right: 40px;
+    top: 5%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 .container {
+    width: 90%; /* Adjust the width as needed */
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Adjust layout to vertical for better mobile display */
 }
 
 #searchInput {
     padding: 10px;
-    width: 100%;
+    width: 100%; /* Adjust the width to fill the container */
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -33,8 +49,42 @@ body {
     animation: fadeIn 1s ease-in-out;
 }
 
+/* Add this to your existing CSS styles */
+.result-visible {
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.result-text-white {
+    color: white;
+}
+
+.image-button {
+    position: absolute;
+    left: 20px;
+    top: 20px; /* Adjust as per your layout */
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.image-button img {
+    width: 90px; /* Adjust size as per your image */
+    height: auto; /* Maintain aspect ratio */
+}
+
 .result-item {
     animation: slideIn 0.5s forwards;
+    display: none;
+}
+
+#photo {
+    width: 60px;
+    height: 60px;
 }
 
 @keyframes slideIn {

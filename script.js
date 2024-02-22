@@ -32,12 +32,12 @@ const peopleData = [
     },
 
     {
-      name: "",
-      birthday: "15.03.2009",
-      fullName: "Szmulias",
+      name: "Mateusz Lubiecki",
+      birthday: "01.11.2008",
+      fullName: "Lubiecki",
       photo: false,
-      address: "Ritterstrase krefeld",
-      school: "Frei-Herr-Vom-Stein (Realschule), Krefeld"
+      address: "Elizabethstr. 63, krefeld",
+      school: "Kaiserplatz, Krefeld"
     },
     // Add more people here
   ];

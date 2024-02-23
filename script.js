@@ -155,7 +155,7 @@ function speakText(person) {
       Schule: ${person.school}.
       Haare: ${person.Haare}.
       Gewicht: ${person.Gewicht}.
-      Größe: ${person.Größe}.."Meter"
+      Größe: ${person.Größe} "Meter"
       Single: ${person.Single}.
       Partner: ${person.Partner}.
       Mutter: ${person.Mutter}.

@@ -128,7 +128,7 @@ const peopleData = [
     Freundeskreis: "Yusuf, Luis, Ecrin, Drian, Effe",
     Single: "Single",
     Partner: "nicht vorhanden",
-    Haare: "Braun"
+    Haare: "Braun",
     Gewicht: "59 Kilogramm",
     Größe: "1,86",
     Mutter: "Unbekannt",

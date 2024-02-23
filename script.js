@@ -58,7 +58,7 @@ const peopleData = [
     Mutter: "Renata Nowak",
     Vater: "Rafaelo Szumilas",
     Geschwister: "Dominika Nowak",
-    Hobbies: "",
+    Hobbies: "Stalken",
   },
 
   {
@@ -153,7 +153,7 @@ function speakText(person) {
       Schule: ${person.school}.
       Haare: ${person.Haare}.
       Gewicht: ${person.Gewicht}.
-      Größe: ${person.Größe} "Meter"
+      Größe: ${person.Größe} "Meter".
       Single: ${person.Single}.
       Partner: ${person.Partner}.
       Mutter: ${person.Mutter}.

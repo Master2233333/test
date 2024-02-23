@@ -125,7 +125,7 @@ const peopleData = [
     address: "Irmgardisweg, Uerdingen Krefeld",
     school: "Frei-Herr-Vom-Stein (Realschule), Krefeld",
     Notes: "",
-    Freundeskreis: "Yusuf, Luis, Ecrin, Drian, Effe",
+    Freundeskreis: "Yusuf, Luis, Echrin, Drian, Effe",
     Single: "Single",
     Partner: "nicht vorhanden",
     Haare: "Braun",
@@ -134,7 +134,7 @@ const peopleData = [
     Mutter: "Unbekannt",
     Vater: "Unbekannt",
     Geschwister: "Unbekannt",
-    Hobbies: "Fortnite zocken, vapen und spazieren",
+    Hobbies: "Fortnite zocken, vaipen und spazieren",
   },
     
 ];
@@ -153,7 +153,7 @@ function speakText(person) {
       Schule: ${person.school}.
       Haare: ${person.Haare}.
       Gewicht: ${person.Gewicht}.
-      Größe: ${person.Größe}
+      Größe: ${person.Größe} "Meter"
       Single: ${person.Single}.
       Partner: ${person.Partner}.
       Mutter: ${person.Mutter}.

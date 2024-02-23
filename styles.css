@@ -11,6 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+  
 }
 
 .button-title {
@@ -37,7 +38,7 @@ body {
 }
 
 #searchInput {
-    padding: 10px;
+    padding: 5px;
     width: 100%; /* Adjust the width to fill the container */
     margin-bottom: 10px;
     border-radius: 5px;
@@ -45,9 +46,21 @@ body {
 }
 
 #result {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
     animation: fadeIn 1s ease-in-out;
+    width: 100%;
+    overflow: hidden;
 }
+
+.result-item {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+
+
 
 /* Add this to your existing CSS styles */
 .result-visible {
@@ -77,10 +90,9 @@ body {
     height: auto; /* Maintain aspect ratio */
 }
 
-.result-item {
-    animation: slideIn 0.5s forwards;
-    display: none;
-}
+
+
+
 
 #photo {
     width: 60px;

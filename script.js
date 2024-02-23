@@ -52,20 +52,19 @@ const peopleData = [
     Freundeskreis: "Unbekannt",
     Single: "Vergeben",
     Partner: "Darius Stefan Verbiceanu ",
-    Haare: "Schwarz",
+    Haare: "Braun",
     Gewicht: "65 Kilogramm",
     Größe: "1,65",
     Mutter: "Renata Nowak",
     Vater: "Rafaelo Szumilas",
     Geschwister: "Dominika Nowak",
-    Hobbies: "Stalken",
+    Hobbies: "Leute beobachten",
   },
 
   {
     name: "Mateusz Lubiecki",
     birthday: "01.11.2008",
     fullName: "Lubiecki",
-
     address: "Elizabethstr. 63, krefeld",
     school: "Kaiserplatz, Krefeld",
     Notes: "",

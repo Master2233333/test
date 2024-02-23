@@ -55,9 +55,9 @@ const peopleData = [
     Haare: "Schwarz",
     Gewicht: "65 Kilogramm",
     Größe: "1,65",
-    Mutter: "Renata Novak Szumilas",
+    Mutter: "Renata Nowak",
     Vater: "Rafaelo Szumilas",
-    Geschwister: "Dominika Szumilas",
+    Geschwister: "Dominika Nowak",
     Hobbies: "",
   },
 
@@ -117,6 +117,28 @@ const peopleData = [
     Hobbies: "Vermutlich Fußball, Spazieren und Zocken.",
   },
   // Add more people here
+
+{
+    name: "Finnley Fitch",
+    birthday: "30.07.2009",
+    fullName: "Fitch",
+    address: "Irmgardisweg, Uerdingen Krefeld",
+    school: "Frei-Herr-Vom-Stein (Realschule), Krefeld",
+    Notes: "",
+    Freundeskreis: "Yusuf, Luis, Ecrin, Drian, Effe",
+    Single: "Single",
+    Partner: "nicht vorhanden",
+    Haare: "Braun"
+    Gewicht: "59 Kilogramm",
+    Größe: "1,86",
+    Mutter: "Unbekannt",
+    Vater: "Unbekannt",
+    Geschwister: "Unbekannt",
+    Hobbies: "Fortnite zocken, vapen und spazieren",
+  },
+    
+  },
+  
 ];
 
 
@@ -133,7 +155,7 @@ function speakText(person) {
       Schule: ${person.school}.
       Haare: ${person.Haare}.
       Gewicht: ${person.Gewicht}.
-      Größe: ${person.Größe}.
+      Größe: ${person.Größe}.."Meter"
       Single: ${person.Single}.
       Partner: ${person.Partner}.
       Mutter: ${person.Mutter}.

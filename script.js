@@ -23,6 +23,7 @@ const peopleData = [
     Vater: "Unbekannt",
     Geschwister: "Keine",
     Hobbies: "Lernen / Lesen",
+    nationality: "Russisch",
   },
 {
     name: "Yusuf Kaplan",
@@ -41,30 +42,33 @@ const peopleData = [
     Vater: "Unbekannt",
     Geschwister: "Esma Kaplan",
     Hobbies: "Klavier spielen",
+    nationality: "Turkisch",
   },
 {
     name: "Marta Szumilas",
     birthday: "15.03.2009",
     fullName: "Szmulias",
-    address: "Ritterstrase krefeld",
+    address: "Ritterstrase, 286 krefeld",
     school: "Frei-Herr-Vom-Stein (Realschule), Krefeld",
     Notes: "",
-    Freundeskreis: "Unbekannt",
+    Freundeskreis: "Mahmoud, Vanessa, Robert",
     Single: "Vergeben",
     Partner: "Darius Stefan Verbiceanu ",
     Haare: "Braun",
     Gewicht: "65 Kilogramm",
-    Größe: "1,65",
+    Größe: "1,60",
     Mutter: "Renata Nowak",
     Vater: "Rafaelo Szumilas",
     Geschwister: "Dominika Nowak",
     Hobbies: "Leute beobachten",
+    nationality: "Polnisch",
   },
 
   {
     name: "Mateusz Lubiecki",
     birthday: "01.11.2008",
     fullName: "Lubiecki",
+
     address: "Elizabethstr. 63, krefeld",
     school: "Kaiserplatz, Krefeld",
     Notes: "",
@@ -78,6 +82,7 @@ const peopleData = [
     Vater: "Jaroslaw Lubiecki",
     Geschwister: "Monika Lubiecki",
     Hobbies: "Ficken",
+    nationality: "Polnisch",
   },
  {
     name: "Noemi Palmeri",
@@ -96,6 +101,7 @@ const peopleData = [
     Vater: "Unbekannt",
     Geschwister: "Zwei Geschwister, Vanessa Palmeri und Gaia Palmeri.",
     Hobbies: "Ficken",
+    nationality: "Italienerin",
   },
 {
     name: "Yusuf Balaban",
@@ -104,24 +110,23 @@ const peopleData = [
     address: "Remschneider. 218, krefeld",
     school: "Frei-Herr-Vom-Stein (Realschule), Krefeld",
     Notes: "",
-    Freundeskreis: "Milo, Schayan, Christian, Finnley",
+    Freundeskreis: "Unbekannt",
     Single: "Vergeben",
-    Partner: "Marija Rosbach",
+    Partner: "Marija",
     Haare: "Schwarz",
-    Gewicht: "ungefähr 65 Kilogramm",
+    Gewicht: "Unbekannt",
     Größe: "1,73",
     Mutter: "Unbekannt",
-    Vater: "Hasan Balaban",
-    Geschwister: "Jüngeren Bruder und ältere Schwester, Namen unbekannt.",
-    Hobbies: "Vermutlich Fußball, Spazieren und Zocken.",
+    Vater: "Unbekannt",
+    Geschwister: "Unbekannt",
+    Hobbies: "Unbekannt",
+    nationality: "Turkisch",
   },
-  // Add more people here
-
-{
+  {
     name: "Finnley Fitch",
     birthday: "30.07.2009",
     fullName: "Fitch",
-    address: "Irmgardisweg, Uerdingen Krefeld",
+    address: "Irmgardisweg. 19 bis 21, Uerdingen Krefeld",
     school: "Frei-Herr-Vom-Stein (Realschule), Krefeld",
     Notes: "",
     Freundeskreis: "Yusuf, Luis, Echrin, Drian, Effe",
@@ -134,8 +139,27 @@ const peopleData = [
     Vater: "Unbekannt",
     Geschwister: "Kleine Schwester, unbekannt",
     Hobbies: "Fortnite zocken, vaipen und spazieren",
+    nationality: "Polnisch",
   },
-    
+  {
+    name: "Lara Sophie Dembski",
+    birthday: "09.12.2009",
+    fullName: "Dembski",
+    address: "Unbekannt",
+    school: "Frei-Herr-Vom-Stein (Realschule), Krefeld",
+    Notes: "",
+    Freundeskreis: "Mahmoud, Mia, Lara Kalina, Marta",
+    Single: "Single",
+    Partner: "nicht vorhanden",
+    Haare: "Blond",
+    Gewicht: "65 Kilogramm",
+    Größe: "1,75",
+    Mutter: "Unbekannt",
+    Vater: "Unbekannt",
+    Geschwister: "2 Bruder, Luca Dembski, Jonas Dembski",
+    Hobbies: "Lesen",
+    nationality: "Deutsch",
+  },
 ];
 
 
@@ -146,13 +170,15 @@ speechSynthesisUtterance.lang = 'de-DE';
 // Function to speak the given text
 function speakText(person) {
   const text = `
+      Name: ${person.name}.
       Geburtsdatum: ${person.birthday}.
+      Nationalität: ${person.nationality}.
       Nachname: ${person.fullName}.
       Adresse: ${person.address}.
       Schule: ${person.school}.
       Haare: ${person.Haare}.
       Gewicht: ${person.Gewicht}.
-      Größe: ${person.Größe} "Meter".
+      Größe: ${person.Größe} Meter.
       Single: ${person.Single}.
       Partner: ${person.Partner}.
       Mutter: ${person.Mutter}.
@@ -230,6 +256,7 @@ document.addEventListener('DOMContentLoaded', function() {
           document.getElementById('vater').textContent = person.Vater;
           document.getElementById('hobbies').textContent = person.Hobbies;
           document.getElementById('geschwister').textContent = person.Geschwister;
+          document.getElementById('nationality').textContent = person.nationality;
           // Show the result container and result items
           result.style.display = 'block';
           resultItems.forEach(item => {
@@ -288,6 +315,7 @@ const mutterElement = document.getElementById('mutter');
 const vaterElement = document.getElementById('vater');
 const geschwisterElement = document.getElementById('geschwister');
 const hobbiesElement = document.getElementById('hobbies');
+const nationalityElement = document.getElementById('nationality');
 const noPhotoText = "Kein Foto bekannt";
 
 searchInput.addEventListener('input', () => {
@@ -311,6 +339,7 @@ searchInput.addEventListener('input', () => {
     vaterElement.textContent = person.Vater;
     geschwisterElement.textContent = person.Geschwister;
     hobbiesElement.textContent = person.Hobbies;
+    nationalityElement.textContent = person.nationality;
     result.style.display = 'block';
     speakText(person);
    

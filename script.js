@@ -137,8 +137,6 @@ const peopleData = [
     Hobbies: "Fortnite zocken, vapen und spazieren",
   },
     
-  },
-  
 ];
 
 

@@ -133,7 +133,7 @@ const peopleData = [
     Größe: "1,86",
     Mutter: "Unbekannt",
     Vater: "Unbekannt",
-    Geschwister: "Unbekannt",
+    Geschwister: "Kleine Schwester, unbekannt",
     Hobbies: "Fortnite zocken, vaipen und spazieren",
   },
     
